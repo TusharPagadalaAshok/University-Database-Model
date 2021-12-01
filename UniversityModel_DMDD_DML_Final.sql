@@ -1464,6 +1464,17 @@ select @getCourseCount as 'No. of Courses'
 
 Go
 
+--Execution of Stored Procedure 5:
+
+DECLARE @count INT; 
+EXEC getAllStudentDataAssgToAdvisor 
+
+    @advisor_name = 'Harry Wes', 
+
+    @stuCount = @count OUTPUT; 
+
+  SELECT @count AS 'Number of Students assigned to this Advisor:';
+
 --COLUMN DATA ENCRYTION
 
 --Opening the symmetric key to encrypt the data

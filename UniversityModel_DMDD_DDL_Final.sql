@@ -429,7 +429,20 @@ END
 
 
 Go
+--STORED PROCEDURE 5: All students assigned to an advisor
+CREATE PROCEDURE getAllStudentDataAssgToAdvisor
+( @advisor_name  varchar(45), @stuCount INT OUTPUT ) AS 
+
+BEGIN 
+
+Select * from Student s inner join Advisor a on s.AdvisorID=a.AdvisorID where a.AdvisorName=@advisor_name
+
+Select @stuCount = @@ROWCOUNT; 
+
+END 
+
 --CREATION OF NON-CLUSTERED INDEXES
+
 --Create non-clustered Index on StudentName in the Student Table
 CREATE NONCLUSTERED INDEX IX_Student_StudentName ON Student(StudentName ASC); 
 Go
@@ -461,7 +474,6 @@ CREATE SYMMETRIC KEY StudentPass_SM
 WITH ALGORITHM = AES_256
 ENCRYPTION BY CERTIFICATE StudentPass
 Go
-
 
 
 
