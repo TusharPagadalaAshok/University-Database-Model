@@ -8,8 +8,14 @@ The goal of this database is to reduce the data redundancy and improve data cons
 3.	Making course registration easier. Suppose a student wants to opt for a course from a different department, he can do so by accessing the course registration system which is in sync with the central database.
 4.	Making sure each student is assigned an advisor. Having a centralized database, gives the student flexibility to choose an Academic Advisor (from any Department) or a counsellor they are comfortable with.
 
-## Entity-Relationship Diagram
+## Entity-Relationship Diagram(Normalized to 3NF)
 
 ![image](https://user-images.githubusercontent.com/91435691/152665781-7bb2d102-2be9-4a53-9142-a8fd49ec956b.png)
+
+On PowerBI:
+
+![image](https://user-images.githubusercontent.com/91435691/159556307-c0c4f2fc-bd1f-4926-983f-58e80e5c5c13.png)
+
+![image](https://user-images.githubusercontent.com/91435691/159556393-43c8fd47-5b73-4538-b062-d549bc3bc201.png)
 
 
